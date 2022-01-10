@@ -1,0 +1,20 @@
+﻿@model List<string>
+
+<div>
+    <h4>@ViewData["Title"]</h4>
+    @foreach (var item in Model)
+    {
+        <h5>@item</h5>
+    }
+</div>
+<div class="row">
+    <div class="col-3 col-sm-3 col-md-3">
+        <a style="width:100%" class="btn btn-primary" href="/Home/Index2?next=false">上</a>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3">
+        <a style="width:100%" class="btn btn-primary" href="/Home/Index2">刷</a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6">
+        <a style="width:100%" class="btn btn-primary" href="/Home/Index2?next=true">下一页</a>
+    </div>
+</div>
